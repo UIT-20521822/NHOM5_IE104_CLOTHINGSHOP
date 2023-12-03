@@ -1,0 +1,80 @@
+.logIn {
+    margin: $mg-3;
+}
+
+.logIn__content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.forms {
+    margin: $mg-4 0;
+}
+
+.logIn__form, .signUp__form {
+    border: 1px solid $color-gray-2;
+    box-shadow: 0 4px 16px $color-yellow-0;
+    padding: $pd-3;
+    height: 350px;
+}
+
+.logIn__form h4, .signUp__form h4 {
+    border-bottom: 1px solid $color-gray-2;
+    padding-bottom: $pd-2;
+    color: $color-yellow-0;
+}
+
+.enterEmail, .enterPassword {
+    padding: $pd-1 + 2 0;
+}
+
+.enterEmail label, .enterPassword label {
+    display: block;
+    @include styleText($color-black-0, $fs-0, $fw-2);
+}
+
+.enterEmail input, .enterPassword input {
+    width: 250px;
+    line-height: 20px;
+    padding: $pd-0 $pd-1;
+    outline: none;
+    border: 1px solid $color-gray-2;
+}
+
+.enterEmail input:focus, .enterPassword input:focus {
+    border: 1px solid $color-yellow-0;
+    box-shadow: 1px 1px 2px 0px $color-yellow-0;
+}
+
+.logIn .btn {
+    background-color: $color-yellow-0;
+    color: $color-white-0;
+    margin: $mg-1 + 2 0;
+}
+
+.logIn .btn:hover {
+    background-color: $color-orange-0;
+    color: $color-black-0;
+}
+
+.logIn .btn:active {
+    outline: none;
+}
+
+.resetPassword a {
+    text-decoration: none;
+    @include styleText($color-red-0, $fs-0 + 1, $fw-1);
+}
+
+.resetPassword a:hover {
+    color: $color-blue-0;
+}
+
+.signUp__form p {
+    padding: $pd-1 + 2 0;
+    font-weight: $fw-1;
+}
+
+.signUp__form .btn {
+    margin: 0;
+}

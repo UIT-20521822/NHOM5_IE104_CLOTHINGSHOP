@@ -1,0 +1,60 @@
+.card {
+    height: 275px;
+    margin-right: 1px;
+    img {
+        height: 200px;
+    }
+    .card-body {
+        padding: 1rem;
+        .card-title {
+            @include styleText($color-orange-0, $fs-0, $fw-1);
+        }
+        .card__price {
+            text-align: right;
+            padding-top: $pd-0;
+            span {
+                &:first-child {
+                    @include styleText($color-gray-0, $fs-0, $fw-0);
+                    text-decoration: line-through;
+                }
+                &:last-child {
+                    @include styleText($color-red-0, $fs-0, $fw-2);
+                }
+            }
+        }
+    }
+}
+
+
+.card--feedback {
+    height: 500px;
+    .card-body {
+        padding: 2rem;
+        .card__top {
+            display: flex;
+            margin-bottom: $mg-2 - 5;
+        }
+        .card__avatar {
+            margin-right: $mg-2 - 5;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+        .card__name {
+            margin-bottom: 0;
+        }
+        .card__stars {
+            color: $color-yellow-0;
+        }
+
+        .card-text {
+            @include styleText($color-black-0, $fs-0, $fw-0);
+        }
+
+        .feedback__img {
+            height: 300px;
+        }
+    }
+}

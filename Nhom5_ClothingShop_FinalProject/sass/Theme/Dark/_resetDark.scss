@@ -1,0 +1,6 @@
+body {
+    &.darkMode {
+        color: $color-dark-3;
+        background-color: $color-dark-1;
+    }
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHI TIẾT SẢN PHẨM</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css//owl.theme.default.min.css" />
+
+    <!-- THEMIFY ICON -->
+    <link
+      rel="stylesheet"
+      href="../icon/themify-icons-font/themify-icons/themify-icons.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+      <button class="sidebarMini__button">
+        <i class="fa fa-cog"></i>
+      </button>
+
+      <div class="sidebarMini__content">
+        <h2>Dark Mode</h2>
+        <div class="d-flex">
+          <span>Off</span>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+          <span>On</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <p class="header__top">DON&apos;T BE THE SAME - BE DIFFERENT</p>
+
+      <div class="container-md header__navBar">
+        <div class="text-right mb-0">
+          <a href="tel:0998761234"
+            ><i class="fa-solid fa-phone"></i>
+            <span class="mx-3 border-right pr-2">099.876.1234</span></a
+          >
+          <a href="#"><i class="fa fa-search border-right pr-2"></i></a>
+          <a href="./logIn.html"
+            ><i class="mx-3 fa fa-user border-right pr-2"></i
+          ></a>
+          <span class="header__cart pr-4">
+            <a href="./cart.html"><i class="fa fa-shopping-cart"></i> </a>
+            <div class="cart__detail">
+              <div class="cart__item">
+                <img class="img-fluid" src="../img/dam-1.jpg" alt="dam-1" />
+                <div class="cart__itemInfo">
+                  <p>CAMELLIA DRESS</p>
+                  <p>Size: S</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>1</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">399,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__item">
+                <img class="img-fluid" src="../img/pk-6.jpg" alt="pk-6" />
+                <div class="cart__itemInfo">
+                  <p>FASHIONABLE RING</p>
+                  <p>Màu: Silver</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>2</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">421,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__priceTotal">
+                <p>TỔNG TIỀN:</p>
+                <p>1,241,000</p>
+              </div>
+            </div>
+          </span>
+        </div>
+
+        <nav class="navbar navbar-expand-md px-0">
+          <a class="navbar-brand" href="#"> NHOM5 </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#homeNavBar"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="homeNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item line">
+                <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item dropdown line">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  QUẦN ÁO
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./clothes.html"
+                    >Tất cả sản phẩm</a
+                  >
+                  <a class="dropdown-item" href="./shirt.html">Áo sơ mi</a>
+                  <a class="dropdown-item" href="./t-shirt.html">Áo thun</a>
+                  <a class="dropdown-item" href="./dress.html">Đầm</a>
+                  <a class="dropdown-item" href="./skirt.html">Chân váy</a>
+                  <a class="dropdown-item" href="./pants.html">Quần</a>
+                </div>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./jewelry.html">PHỤ KIỆN</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./saleOff.html">SALE OFF</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="#">LOOKBOOK</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Menu cố định khi trượt màn hình -->
+    <header id="headerFixed">
+      <nav class="navbar navbar-expand-md container">
+        <a class="navbar-brand" href="#"> NHOM5 </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#homeNavBar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="homeNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item line">
+              <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown line">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                QUẦN ÁO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./clothes.html"
+                  >Tất cả sản phẩm</a
+                >
+                <a class="dropdown-item" href="./shirt.html">Áo sơ mi</a>
+                <a class="dropdown-item" href="./t-shirt.html">Áo thun</a>
+                <a class="dropdown-item" href="./dress.html">Đầm</a>
+                <a class="dropdown-item" href="./skirt.html">Chân váy</a>
+                <a class="dropdown-item" href="./pants.html">Quần</a>
+              </div>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./jewelry.html">PHỤ KIỆN</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./saleOff.html">SALE OFF</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="#">LOOKBOOK</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="productDetail">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-12 product-top">
+            <ol>
+              <a href="../index.html">Trang chủ</a>
+              <span>&#187;</span>
+              <a href="#">Quần áo</a>
+              <span>&#187;</span>
+              <a href="#">Áo thun</a>
+              <span>&#187;</span>
+              <a href="#">Basic</a>
+              <span>&#187;</span>
+              <p>STRAPPY TOP</p>
+            </ol>
+          </div>
+        </div>
+
+        <!-- ----------------Hinh anh san pham -------------------- -->
+        <div class="row product-content">
+          <div class="row product-content-left col-md-6 col-sm-12 col-12">
+            <!-- Anh lon -->
+            <div class="product-content-left-big-img">
+              <img src="../img/sp1.jpg" alt="San pham 1" />
+            </div>
+
+            <!-- Anh nho -->
+            <div class="product-content-left-small-img">
+              <img src="../img/sp2.jpg" alt="San pham 2" />
+              <img src="../img/sp3.jpg" alt="San pham 3" />
+              <img src="../img/sp4.jpg" alt="San pham 4" />
+              <img src="../img/sp5.jpg" alt="San pham 5" />
+              <img src="../img/sp6.jpg" alt="San pham 6" />
+            </div>
+          </div>
+
+          <div class="product-content-right col-md-6 col-sm-12 col-12">
+            <!-- Tên sản phẩm -->
+            <div class="product-name">
+              <h1>STRAPPY TOP</h1>
+            </div>
+
+            <!-- Giá sản phẩm -->
+            <div class="product-price">
+              <p>210.000</p>
+            </div>
+            <!-- Phân loại màu sắc -->
+            <div class="product-color">
+              <ul class="nav nav-tabs">
+                <li class="colors-item">
+                  <a href="#" class="nav-link active">Sọc - Striped</a>
+                </li>
+                <li class="colors-item">
+                  <a href="#" class="nav-link">Nâu - Brown</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sizes -->
+            <div class="product-sizes">
+              <p>Size:</p>
+              <div class="size-type">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+              </div>
+            </div>
+
+            <!-- Số lượng -->
+            <div class="quantity">
+              <p>Số lượng:</p>
+              <div class="quantity-button">
+                <div class="downqty">–</div>
+                <input
+                  type="text"
+                  min="0"
+                  class="form-control soluong"
+                  value="0"
+                />
+                <div class="upqty">+</div>
+              </div>
+            </div>
+
+            <!-- Button Thêm vào giỏ hàng -->
+            <div class="cart-productDetail row">
+              <div class="cart-btn btn col-sm-12 col-12">THÊM VÀO GIỎ HÀNG</div>
+            </div>
+
+            <!-- Button Mua ngay -->
+            <div class="buy-now-productDetail row">
+              <div class="buy-now-btn btn col-sm-12 col-12">MUA NGAY</div>
+            </div>
+
+            <div class="panel-title-big">
+              <div class="panel-title row">
+                <ul>
+                  <li class="panel-title-item col-4 chitiet">
+                    <a href="#" class="panel-menu active">Chi tiết sản phẩm</a>
+                  </li>
+                  <li class="panel-title-item col-4 chamsoc">
+                    <a href="#" class="panel-menu">Chăm sóc sản phẩm</a>
+                  </li>
+                  <li class="panel-title-item col-4 doitravanchuyen">
+                    <a href="#" class="panel-menu">Đổi trả và Vận chuyển</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="panel-title-content">
+                <div class="panel-title-content-chitiet">
+                  <p>
+                    Chất liệu : Thun gân <br />
+                    Kiểu dáng: Áo ba lỗ croptop có viền.
+                  </p>
+                </div>
+
+                <div class="panel-title-content-chamsoc">
+                  <p>
+                    - Giặt ở nhiệt độ bình thường, với đồ có màu tương tự.<br />
+                    - Không dùng hóa chất tẩy lên sản phẩm.<br />
+                    - Bạn nên giặt tay và LỘN NGƯỢC ÁO trước khi giặt.<br />
+                    - Không ủi trực tiếp lên hình in.<br />
+                    - Hạn chế sử dụng máy sấy và ủi (nếu có) chỉ nên ủi lên vải
+                    hoặc sử dụng bàn ủi hơi nước ở nhiệt độ thích hợp.
+                  </p>
+                </div>
+
+                <div class="panel-title-content-doitravanchuyen">
+                  <p>
+                    + ĐỔI TRẢ<br />
+                    1.Điều kiện đổi hàng<br />
+                    - Bạn lưu ý giữ lại hoá đơn để đổi hàng trong vòng 30
+                    ngày.<br />
+                    - Đối với mặt hàng giảm giá, phụ kiện cá nhân (áo lót, khẩu
+                    trang, vớ ...) không nhận đổi hàng.<br />
+                    - Tất cả sản phẩm đã mua sẽ không được đổi trả lại bằng tiền
+                    mặt.<br />
+                    - Bạn có thể đổi size hoặc sản phẩm khác trong 30 ngày (Lưu
+                    ý: sản phẩm chưa qua sử dụng, còn tag nhãn và hóa đơn mua
+                    hàng).<br />
+                    - Bạn vui lòng gửi cho chúng mình clip đóng gói và hình ảnh
+                    của đơn hàng đổi trả của bạn, nhân viên tư vấn sẽ xác nhận
+                    và tiến hành lên đơn đổi trả cho bạn.<br />
+                    2. Trường hợp khiếu nại<br />
+                    - Bạn phải có video unbox hàng<br />
+                    - Quay video rõ nét 6 mặt của gói hàng <br />
+                    - Quay rõ: Tên người nhận, mã đơn, địa chỉ, số điện
+                    thoại.<br />
+                    - Clip không cắt ghép, chỉnh sửa<br />
+                    <br />
+                    + VẬN CHUYỂN
+                  </p>
+
+                  <ul class="infoList-delivery">
+                    <li>
+                      <span class="star-icon ti-shield"></span>Cam kết chính
+                      hãng 100%
+                    </li>
+                    <li>
+                      <span class="truck-icon ti-truck"></span>Giao hàng dự
+                      kiến: <br />
+                      <strong>Thứ 2 - Thứ 7 từ 9h00 - 17h00</strong>
+                    </li>
+                    <li>
+                      <span class="reload-icon ti-reload"></span>Hỗ trợ 24/7
+                      <br />
+                      Với các kênh chat, email & phone
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sản phẩm liên quan -->
+        <div id="slider-product-related">
+          <div class="product-related">
+            <div class="product-related-title">
+              <p>SẢN PHẨM LIÊN QUAN</p>
+            </div>
+
+            <!-- Carousel sản phẩm liên quan -->
+            <div class="product-related-carousel">
+              <div class="owl-carousel owl-theme product-related-content">
+                <div
+                  class="item product-related-item active"
+                  style="width: 228px"
+                >
+                  <img src="../img/sp4.jpg" alt="Liên quan 1" />
+                  <h3><a href="#">STRAPPY TOP</a></h3>
+                </div>
+
+                <div
+                  class="item product-related-item active"
+                  style="width: 228px"
+                >
+                  <img src="../img/sp3.jpg" alt="Liên quan 1" />
+                  <h3><a href="#">STRAPPY TOP</a></h3>
+                </div>
+
+                <div
+                  class="item product-related-item active"
+                  style="width: 228px"
+                >
+                  <img src="../img/sp2.jpg" alt="Liên quan 1" />
+                  <h3><a href="#">STRAPPY TOP</a></h3>
+                </div>
+
+                <div
+                  class="item product-related-item active"
+                  style="width: 228px"
+                >
+                  <img src="../img/sp1.jpg" alt="Liên quan 1" />
+                  <h3><a href="#">STRAPPY TOP</a></h3>
+                </div>
+
+                <div class="item product-related-item" style="width: 228px">
+                  <img src="../img/sp5.jpg" alt="Liên quan 1" />
+                  <h3><a href="#">STRAPPY TOP</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top section">
+        <div class="container">
+          <div class="footer__grid row">
+            <div class="col-12 col-lg-4">
+              <h3>NHOM5</h3>
+              <p>
+                NHOM5 nhận đặt hàng trực tuyến và giao hàng tận nơi. Ngoài ra,
+                bạn cũng có thể mua sắm trực tiếp tại hệ thống cửa hàng của
+                NHOM5.
+              </p>
+              <img
+                class="lawLogo img-fluid"
+                src="../img/logo-bo-cong-thuong-da-thong-bao.png"
+                alt="logo-bo-cong-thuong-da-thong-bao"
+              />
+              <p class="socialIcon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>HỖ TRỢ</h3>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách đổi - trả - hoàn tiền</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo hành - bồi hoàn</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách vận chuyển</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo mật</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Phương thức thanh toán và xuất hóa đơn</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>LIÊN HỆ</h3>
+              <div class="footer__contact">
+                <i class="fa fa-map-marker-alt"></i>
+                <a href="#">Đại học Công nghệ thông tin</a>
+              </div>
+              <div class="footer__contact">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:nhom5@gmail.com">nhom5@gmail.com</a>
+              </div>
+              <div class="footer__contact">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0998761234">099.876.1234</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__form">
+            <form>
+              <div class="form-group form-row">
+                <label class="col-12 col-lg-4 col-form-label" for="emailFooter"
+                  >ĐĂNG KÝ NHẬN VOUCHER</label
+                >
+
+                <div class="col-8 col-lg-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailFooter"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+
+                <div class="col-4 col-lg-2 text-center">
+                  <button type="submit" class="btn">ĐĂNG KÝ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>
+          &copy; 2023 Clothing Shop. All rights reserved | Design by
+          <a href="#">Nhom5</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQUERY -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL JS -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- BACK TOP TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/chitietsp.js"></script>
+  </body>
+</html>

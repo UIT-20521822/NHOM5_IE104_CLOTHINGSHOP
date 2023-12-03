@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHỤ KIỆN</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css//owl.theme.default.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+          <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+          </button>
+    
+          <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+              <span>Off</span>
+              <label class="switch" for="checkbox">
+                <input type="checkbox" name="" id="checkbox" />
+                <div class="slider"></div>
+              </label>
+              <span>On</span>
+            </div>
+          </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <p class="header__top">DON&apos;T BE THE SAME - BE DIFFERENT</p>
+
+      <div class="container-md header__navBar">
+        <div class="text-right mb-0">
+          <a href="tel:0998761234"
+            ><i class="fa-solid fa-phone"></i>
+            <span class="mx-3 border-right pr-2">099.876.1234</span></a
+          >
+          <a href="#"><i class="fa fa-search border-right pr-2"></i></a>
+          <a href="./logIn.html"><i class="mx-3 fa fa-user border-right pr-2"></i></a>
+          <span class="header__cart pr-4">
+            <a href="./cart.html"><i class="fa fa-shopping-cart"></i>
+            </a>
+            <div class="cart__detail">
+              <div class="cart__item">
+                <img class="img-fluid" src="../img/dam-1.jpg" alt="dam-1">
+                <div class="cart__itemInfo">
+                  <p>CAMELLIA DRESS</p>
+                  <p>Size: S</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>1</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">399,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__item">
+                <img class="img-fluid" src="../img/pk-6.jpg" alt="pk-6">
+                <div class="cart__itemInfo">
+                  <p>FASHIONABLE RING</p>
+                  <p>Màu: Silver</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>2</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">421,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__priceTotal">
+                <p>TỔNG TIỀN:</p>
+                <p>1,241,000</p>
+              </div>
+            </div>
+          </span>
+
+        </div>
+
+        <nav class="navbar navbar-expand-md px-0">
+          <a class="navbar-brand" href="#">
+            NHOM5
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#homeNavBar"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="homeNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item line">
+                <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item dropdown line">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  QUẦN ÁO
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./clothes.html">Tất cả sản phẩm</a>
+                  <a class="dropdown-item" href="./shirt.html">Áo sơ mi</a>
+                  <a class="dropdown-item" href="./t-shirt.html">Áo thun</a>
+                  <a class="dropdown-item" href="./dress.html">Đầm</a>
+                  <a class="dropdown-item" href="./skirt.html">Chân váy</a>
+                  <a class="dropdown-item" href="./pants.html">Quần</a>
+                </div>
+              </li>
+              <li class="nav-item active line">
+                <a class="nav-link" href="#">PHỤ KIỆN</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./saleOff.html">SALE OFF</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./lookbook.html">LOOKBOOK</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Menu cố định khi trượt màn hình -->
+    <header id="headerFixed">
+      <nav class="navbar navbar-expand-md container">
+        <a class="navbar-brand" href="#">
+          NHOM5
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#homeNavBar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="homeNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item line">
+              <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown line">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                QUẦN ÁO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./clothes.html">Tất cả sản phẩm</a>
+                <a class="dropdown-item" href="./shirt.html">Áo sơ mi</a>
+                <a class="dropdown-item" href="./t-shirt.html">Áo thun</a>
+                <a class="dropdown-item" href="./dress.html">Đầm</a>
+                <a class="dropdown-item" href="./skirt.html">Chân váy</a>
+                <a class="dropdown-item" href="./pants.html">Quần</a>
+              </div>
+            </li>
+            <li class="nav-item active line">
+              <a class="nav-link" href="#">PHỤ KIỆN</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./saleOff.html">SALE OFF</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./lookbook.html">LOOKBOOK</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- JEWELRY -->
+    <section class="jewelry">
+      <div class="wrapper container">
+        <div class="filter">
+          <div class="row">
+            <div class="col-6">
+              <div class="filter__content row">
+                <h4 class="col-4">LỌC THEO</h4>
+                <select class="sizeFilter col-4" name="" id="">
+                  <option value="">Size</option>
+                  <option value="">Freesize</option>
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                </select>
+                <select class="colorFilter col-4" name="" id="">
+                  <option value="">Màu</option>
+                  <option value="">Blue</option>
+                  <option value="">Pink</option>
+                  <option value="">Black</option>
+                  <option value="">Yellow</option>
+                  <option value="">White</option>
+                  <option value="">Beige</option>
+                  <option value="">Green</option>
+                  <option value="">Navy</option>
+                  <option value="">Red</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+
+        <div class="item__content">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img class="img-fluid" src="../img/pk-8.jpg" alt="pk-8" />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>FLOWER TOTE BAG</h3>
+                      <div class="price">
+                        <span>100,000</span>
+                        <span>89,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-7.jpg"
+                        alt="pk-7"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>LUCKY RED BRACELET</h3>
+                      <div class="price">
+                        <span>218,000</span>
+                        <span>137,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img class="img-fluid" src="../img/pk-1.jpg" alt="pk-1" />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>PLEASE REUSE ME! TOTE</h3>
+                      <div class="price">
+                        <span></span>
+                        <span>250,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-2.jpg"
+                        alt="pk-2"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>CUTE TURBAN</h3>
+                      <div class="price">
+                        <span></span>
+                        <span>100,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-3.jpg"
+                        alt="pk-3"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>SILVER WHEEL</h3>
+                      <div class="price">
+                        <span>999,000</span>
+                        <span>500,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-4.jpg"
+                        alt="pk-4"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>GOLD BANGLE</h3>
+                      <div class="price">
+                        <span></span>
+                        <span>1,100,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-5.jpg"
+                        alt="pk-5"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>LONG SOCKS</h3>
+                      <div class="price">
+                        <span></span>
+                        <span>50,000</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="item__img">
+                      <img
+                        class="img-fluid"
+                        src="../img/pk-6.jpg"
+                        alt="pk-6"
+                      />
+                      <div class="item__overlay"></div>
+                      <div class="item__play">
+                        <div>
+                          <a href="./productDetail.html"><i class="fa fa-tshirt"></i></a>
+                          <a href="#">Xem chi tiết</a>
+                          <p class="date">JEWELRY</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="item__title mb-3 mb-md-0">
+                      <h3>FASHIONABLE RING</h3>
+                      <div class="price">
+                        <span></span>
+                        <span>421,000</span>
+                      </div>
+                    </div>
+                </div>
+
+              <div class="col-6 col-md-3 mb-4">
+                <div class="item__img">
+                  <img class="img-fluid" src="../img/pk-9.jpg" alt="pk-9" />
+                  <div class="item__overlay"></div>
+                  <div class="item__play">
+                    <div>
+                      <a href="./productDetail.html"><i class="fa fa-tshirt"></i></i></a>
+                      <a href="#">Xem chi tiết</a>
+                      <p class="date">JEWELRY</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="item__title mb-3 mb-md-0">
+                  <h3>LEATHER BAG</h3>
+                  <div class="price">
+                    <span>899,000</span>
+                    <span>699,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 mb-4">
+                <div class="item__img">
+                  <img class="img-fluid" src="../img/pk-10.jpg" alt="pk-10" />
+                  <div class="item__overlay"></div>
+                  <div class="item__play">
+                    <div>
+                      <a href="./productDetail.html"><i class="fa fa-tshirt"></i></i></a>
+                      <a href="#">Xem chi tiết</a>
+                      <p class="date">JEWELRY</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="item__title mb-3 mb-md-0">
+                  <h3>SATIN HAIR SCRUNCHIES</h3>
+                  <div class="price">
+                    <span></span>
+                    <span>10,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top section">
+        <div class="container">
+          <div class="footer__grid row">
+            <div class="col-12 col-lg-4">
+              <h3>NHOM5</h3>
+              <p>
+                NHOM5 nhận đặt hàng trực tuyến và giao hàng tận nơi. Ngoài ra,
+                bạn cũng có thể mua sắm trực tiếp tại hệ thống cửa hàng của
+                NHOM5.
+              </p>
+              <img
+                class="lawLogo img-fluid"
+                src="../img/logo-bo-cong-thuong-da-thong-bao.png"
+                alt="logo-bo-cong-thuong-da-thong-bao"
+              />
+              <p class="socialIcon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>HỖ TRỢ</h3>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách đổi - trả - hoàn tiền</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo hành - bồi hoàn</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách vận chuyển</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo mật</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Phương thức thanh toán và xuất hóa đơn</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>LIÊN HỆ</h3>
+              <div class="footer__contact">
+                <i class="fa fa-map-marker-alt"></i>
+                <a href="#">Đại học Công nghệ thông tin</a>
+              </div>
+              <div class="footer__contact">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:nhom5@gmail.com">nhom5@gmail.com</a>
+              </div>
+              <div class="footer__contact">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0998761234">099.876.1234</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__form">
+            <form>
+              <div class="form-group form-row">
+                <label class="col-12 col-lg-4 col-form-label" for="emailFooter"
+                  >ĐĂNG KÝ NHẬN VOUCHER</label
+                >
+
+                <div class="col-8 col-lg-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailFooter"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+
+                <div class="col-4 col-lg-2 text-center">
+                  <button type="submit" class="btn">ĐĂNG KÝ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>
+          &copy; 2023 Clothing Shop. All rights reserved | Design by
+          <a href="#">Nhom5</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQUERY -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL JS -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- BACK TOP TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

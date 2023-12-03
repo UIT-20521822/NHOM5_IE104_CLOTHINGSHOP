@@ -1,0 +1,88 @@
+.team__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius-0;
+}
+
+.team__img img {
+    width: 255px;
+    height: 319px;
+}
+
+.team__overlay {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, $color-yellow-0, $color-orange-0);
+    opacity: 0.9;
+    transform: skewX(30deg) translateX(-130%);
+    transition: 0.5s;
+}
+
+.team__img:hover .team__overlay {
+    transform: skewX(30deg) translateX(-30%);
+}
+
+.team__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.team__img:hover .team__play {
+    opacity: 1;
+}
+
+.team__play i {
+    width: 80px;
+    height: 80px;
+    border: 2px solid $color-white-0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.team__play i:hover {
+    transform: scale(0.9);
+}
+
+.team__play a {
+    color: $color-white-0;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: $fs-0 - 1;
+    letter-spacing: $letter-spacing-0 + 2;
+    display: block;
+}
+
+.team__play p {
+    color: $color-white-0;
+}
+
+.team__title {
+    text-align: center;
+}
+
+.team__title h3 {
+    font-size: 18px;
+    color: $color-black-4;
+    margin: 1rem 0;
+}
+
+.team__title i {
+    color: $color-yellow-0;
+}

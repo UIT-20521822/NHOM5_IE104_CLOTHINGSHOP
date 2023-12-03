@@ -1,0 +1,23 @@
+.darkMode .logIn__form, .darkMode .signUp__form {
+    border-color: $color-dark-0;
+    box-shadow: 0 4px 16px $color-dark-3;
+}
+
+.darkMode .enterEmail label, .darkMode .enterPassword label {
+    color: $color-white-0;
+}
+
+.darkMode .enterEmail input, .darkMode .enterPassword input {
+    background-color: $color-dark-0;
+    border-color: $color-blue-0;
+    color: $color-white-0;
+}
+
+.darkMode .enterEmail input:focus, .darkMode .enterPassword input:focus {
+    border: 1px solid $color-dark-3;
+    box-shadow: 1px 1px 2px 0px $color-dark-3;
+}
+
+.darkMode .signUp__form p {
+    color: $color-dark-5;
+}

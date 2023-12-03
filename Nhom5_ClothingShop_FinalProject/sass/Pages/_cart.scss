@@ -1,0 +1,236 @@
+.cart {
+    .cart__content {
+        width: 90%;
+        margin: $mg-4 auto;
+        .cart__detail {
+            .cart__heading {
+                border-bottom: 2px solid $color-yellow-0;
+                padding-bottom: $pd-1;
+            }
+
+            .cart__list {
+                margin-top: $mg-1;
+                width: 100%;
+                p {
+                    @include styleText($color-black-0, $fs-3, $fw-0);
+                }
+                .cart__items {
+                    border: 1px solid $color-yellow-0;
+                    padding: $pd-2;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    .cart__item {
+                        padding: $pd-0 0;
+                        .cart__img {
+                            position: relative;
+                            img {
+                                border: 1px solid $color-yellow-0;
+                                border-radius: $border-radius-0;
+                                width: 100%;
+                                height: 120px;
+                            }
+                            .cart__remove {
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: center;
+                                border-radius: 50%;
+                                background-color: $color-orange-0;
+                                color: $color-white-0;
+                                position: absolute;
+                                top: -7px;
+                                left: 5px;
+                                cursor: pointer;
+                                &:hover {
+                                    color: $color-red-0;
+                                    background-color: $color-yellow-0;
+                                }
+                            }
+                        }
+                        .cart__detail {
+                            p:first-of-type {
+                                @include styleText($color-yellow-0, $fs-3, $fw-2);
+                            }
+                            p:nth-of-type(2) {
+                                @include styleText($color-black-0, $fs-0 + 2, $fw-2);
+                            }
+                            p:last-of-type {
+                                @include styleText($color-gray-10, $fs-0 + 2, $fw-2);
+                            }
+                        }
+                        .cart__total {
+                            text-align: right;
+                            p:first-child {
+                                @include styleText($color-orange-0, $fs-3, $fw-2);
+                            }
+                            .cart__quantity {
+                                font-weight: $fw-1;
+                                span:first-child {
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    border-radius: 50%;
+                                    padding: 0 $pd-0 + 2;
+                                    border: 1px solid $color-orange-0;
+                                    cursor: pointer;
+                                    margin-right: $mg-0;
+                                    background-color: $color-yellow-0;
+                                    &:hover {
+                                        color: $color-white-0;
+                                    }
+                                }
+                                span:last-child {
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    border-radius: 50%;
+                                    padding: 0 $pd-0;
+                                    border: 1px solid $color-orange-0;
+                                    cursor: pointer;
+                                    margin-left: $mg-0;
+                                    background-color: $color-yellow-0;
+                                    &:hover {
+                                        color: $color-white-0;
+                                    }
+                                }
+                                span:nth-child(2) {
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    border: 1px solid transparent;
+                                    font-weight: $fw-2;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cart__note {
+                    margin-top: $mg-4;
+                    padding: $pd-2;
+                    background-color: $color-gray-6;
+                    label {
+                        display: block;
+                        @include styleText($color-orange-0, $fs-3, $fw-2);
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 100px;
+                        padding: $pd-2;
+                        border-radius: $border-radius-0 - 2;
+                        border: 1px solid $color-yellow-0;
+                        &:focus {
+                            outline: none;
+                            border: 2px solid $color-orange-0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebarCart {
+            .cart__heading {
+                border-bottom: 1px solid $color-gray-7;
+                padding-bottom: $pd-1;
+            }
+            .cart__totalPrice {
+                border-bottom: 1px solid $color-gray-7;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p:first-child {
+                    @include styleText($color-black-0, $fs-3, $fw-2);
+                }
+                p:last-child {
+                    @include styleText($color-red-2, $fs-4, $fw-2);
+                }
+            }
+            ul {
+                margin: $mg-2;
+                li {
+                    margin: $mg-1;
+                    @include styleText($color-gray-0, $fs-0 + 2, $fw-0);
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                overflow: hidden;
+                .paymentButton {
+                    width: 100%;
+                    height: 45px;
+                    @include styleText($color-white-0, $fs-3, $fw-1);
+                    background-color: $color-orange-0;
+                    border: none;
+                    border-radius: $border-radius + 3;
+                    span {
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+                .overlay {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color-yellow-0;
+                    border-radius: $border-radius + 3;
+                    transform: translateX(-100%);
+                    transition: 0.5s;
+                }
+                &:hover {
+                    .overlay {
+                        transform: translateX(0);
+                    }
+                    .paymentButton {
+                        span {
+                            color: $color-red-0;
+                        }
+                    }
+                }
+            }
+            .cart__deliveryPolicy {
+                margin-top: $mg-4;
+                background-color: $color-blue-2;
+                width: 100%;
+                border-radius: $border-radius + 3;
+                padding: $pd-1;
+                p:first-of-type {
+                    @include styleText($color-black-0, $fs-0 + 2, $fw-2);
+                }
+                p:last-of-type {
+                    margin-bottom: $mg-0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 765px) and (max-width: 1120px) {
+        .cart__content {
+            .cart__detail {
+                .cart__list {
+                    .cart__items {
+                        .cart__item {
+                            .cart__total {
+                                .cart__quantity {
+                                    span:first-child, span:nth-child(2), span:last-child {
+                                        font-size: $fs-0;
+                                        padding: 0 $pd-0;
+                                        margin: 0;
+                                    }
+                                    span:nth-child(2) {
+                                        width: 10px;
+                                        height: 10px;
+                                        line-height: 10px;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

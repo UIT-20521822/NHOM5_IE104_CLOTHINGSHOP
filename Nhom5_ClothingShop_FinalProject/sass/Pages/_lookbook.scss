@@ -1,0 +1,42 @@
+.lookbook {
+    .lookbook__content {
+    width: 90%;
+    margin: $mg-4 auto;
+        .lookbook__item {
+            position: relative;
+            text-align: center;
+            margin: 15px 0;
+            a {
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: 30%;
+                    @include styleText($color-orange-0, $fs-1 + 5, $fw-3);
+                    display: none;
+                }
+                img {
+                    max-height: 760px;
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 0.7;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive("large") {
+        .lookbook__content {
+            .lookbook__item {
+                a {
+                    span {
+                        font-size: $fs-4;
+                    }
+                }
+            }
+        }
+    }
+}

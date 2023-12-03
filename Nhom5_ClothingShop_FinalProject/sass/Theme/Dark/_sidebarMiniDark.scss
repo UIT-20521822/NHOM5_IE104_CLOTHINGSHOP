@@ -1,0 +1,22 @@
+.darkMode {
+    .sidebarMini {
+        background-color: $color-dark-0;
+        border-left-color: $color-dark-0;
+        .sidebarMini__button {
+            background-color: $color-dark-0;
+            border-color: $color-dark-0;
+        }
+
+        .sidebarMini__content {
+            .switch {
+                .slider {
+                    background-color: $color-dark-1;
+                    box-shadow: 0 0 2px 3px $color-dark-2;
+                    &::before {
+                        background-color: $color-dark-5;
+                    }
+                }
+            }
+        }
+    }
+}

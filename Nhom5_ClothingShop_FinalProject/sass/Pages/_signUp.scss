@@ -1,0 +1,62 @@
+.signUp {
+    margin: $mg-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        text-align: center;
+        color: $color-yellow-0;
+        margin-bottom: $mg-2;
+    }
+    .signUp__formContent {
+        border: 1px solid $color-gray-2;
+        box-shadow: 0 4px 16px $color-yellow-0;
+        padding: $pd-3 $pd-5;
+        width: 420px;
+        .enterName, .enterBirthday, .enterEmail, .enterPassword, .enterPasswordAgain {
+            padding: $pd-1 + 2 0;
+            label {
+                display: block;
+                @include styleText($color-black-0, $fs-0, $fw-2);
+            }
+            input {
+                width: 100%;
+                line-height: 20px;
+                padding: $pd-0 $pd-1;
+                outline: none;
+                border: 1px solid $color-gray-2;
+                &:focus {
+                    border: 1px solid $color-yellow-0;
+                    box-shadow: 1px 1px 2px 0px $color-yellow-0;
+                }
+            }
+        }
+        a {
+            display: block;
+            text-align: center;
+            .btn {
+                width: 150px;
+                background-color: $color-yellow-0;
+                color: $color-white-0;
+                margin: $mg-1 + 2 0;
+                &:hover {
+                    background-color: $color-orange-0;
+                    color: $color-black-0;
+                }
+                &:active {
+                    outline: none;
+                }
+            }
+        }
+        .isHaveAccount {
+            text-align: center;
+            a {
+                text-decoration: none;
+                @include styleText($color-red-0, $fs-0 + 1, $fw-1);
+                &:hover {
+                    color: $color-blue-0;
+                }
+            }
+        }
+    }
+}

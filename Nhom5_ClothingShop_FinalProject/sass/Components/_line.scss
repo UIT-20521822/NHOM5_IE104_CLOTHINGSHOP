@@ -1,0 +1,18 @@
+/* LINE STYLE */
+.line::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    display: block;
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: 0.5s;
+}
+
+.line:hover::after {
+    width: 100%;
+}
+
+.line.active::after {
+    width: 100%;
+}

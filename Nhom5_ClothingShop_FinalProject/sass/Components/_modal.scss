@@ -1,0 +1,9 @@
+.collectionModal .modal-header .modal-title {
+    @include styleText($color-yellow-0, $fs-1, $fw-2);
+}
+
+.collectionModal .modal-body img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: $mg-1;
+}

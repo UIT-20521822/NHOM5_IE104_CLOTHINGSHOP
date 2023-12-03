@@ -1,0 +1,13 @@
+.map {
+    background: linear-gradient(to left, $color-yellow-0, $color-orange-0);
+}
+
+.map__address {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+iframe {
+    width: 100%;
+}

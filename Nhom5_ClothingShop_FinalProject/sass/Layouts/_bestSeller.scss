@@ -1,0 +1,59 @@
+.bestSeller {
+    margin: $mg-1 0;
+    .bestSeller__content {
+        width: 90%;
+        margin: auto;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .bestSeller__left {
+            background: linear-gradient(to left, $color-yellow-0, $color-orange-0);
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                @include styleText($color-white-0, $fs-2, $fw-3);
+                &:hover {
+                    color: $color-red-0;
+                }
+            }
+        }
+        #myTab {
+            margin-bottom: $mg-1;
+            .nav-link {
+                @include styleText($color-black-0, $fs-3, $fw-0);
+                &:hover {
+                    border: 1px solid transparent;
+                    @include styleText($color-yellow-0, $fs-3, $fw-0);
+                }
+                &.active {
+                    border: none;
+                    border-bottom: 5px solid $color-yellow-0;
+                }
+            }
+        }
+    }
+
+    @include responsive("screen-1") {
+        .bestSeller__content {
+            .card {
+                .card-body {
+                    .card-title {
+                        @include styleText($color-orange-0, $fs-0, $fw-1);
+                        margin-bottom: $mg-0;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .bestSeller__content {
+            .bestSeller__left {
+                padding-top: $pd-3;
+            }
+        }
+    }
+}

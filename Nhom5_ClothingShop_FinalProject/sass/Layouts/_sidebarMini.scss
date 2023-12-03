@@ -1,0 +1,74 @@
+.sidebarMini {
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 500;
+    width: 400px;
+    background-color: $color-orange-0;
+    transform: translateX(100%);
+    transition: .5s;
+    border-left: 1px solid $color-orange-0;
+    .sidebarMini__button {
+        @include styleButton($color-white-0, $color-orange-0, $color-orange-0, $fs-4, $fw-0, $pd-0, $pd-3);
+        border-radius: 8px 0 0 8px;
+        position: fixed;
+        transform: translateX(-100%);
+        transition: .5s;
+        &:focus {
+            outline: none;
+        }
+    }
+    .sidebarMini__content {
+        width: 150px;
+        padding: $pd-3;
+        text-align: center;
+        h2 {
+            font-size: $fs-0 + 1;
+            color: $color-white-0;
+        }
+        span {
+            color: $color-white-0;
+        }
+        .switch {
+            width: 50px;
+            height: 25px;
+            margin: 0 $mg-0 + 5;
+            position: relative;
+            input {
+                display: none;
+                &:checked + .slider {
+                    &::before {
+                        transform: translateX(22px);
+                    }
+                }
+            }
+            .slider {
+                background-color: $color-white-0;
+                box-shadow: 0 0 2px 3px $color-yellow-0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: $border-radius-1;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    width: 18px;
+                    height: 18px;
+                    background-color: $color-yellow-0;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 4px;
+                    left: 4px;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+
+    &.is-opened {
+        transform: translateX(60%);
+    }
+}

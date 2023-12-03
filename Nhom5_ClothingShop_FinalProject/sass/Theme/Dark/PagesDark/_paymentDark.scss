@@ -1,0 +1,151 @@
+/* DarkMode */
+/* MAIN */
+.darkMode .payment {
+    background-color: $color-dark-1;
+  }
+
+.darkMode .payment main {
+    color: white;
+}
+
+.darkMode .payment h1 {
+    color: #fbbd61;
+}
+
+.darkMode .payment main h2 {
+    color: #fbbd61;
+}
+
+.darkMode .payment .payment-step a,
+.darkMode .payment .payment-step p {
+    color: #f1f1f1;
+}
+
+.darkMode .payment .payment-step a:hover {
+    color: #fbbd61;
+}
+
+.darkMode .payment .form-group input[type="email"],
+.darkMode .payment .form-group input[type="tel"],
+.darkMode .payment .form-group input[type="text"],
+.darkMode .payment .form-group textarea {
+    border: none;
+    background-color: #152E4D;
+    color: white;
+}
+
+.darkMode .payment .form-group input[type="email"]:focus,
+.darkMode .payment .form-group input[type="tel"]:focus,
+.darkMode .payment .form-group input[type="text"]:focus,
+.darkMode .payment .form-group textarea:focus {
+  border: 3px solid #78dce8;
+  box-shadow: none;
+}
+
+.darkMode .payment .shipping-options {
+    border: 2px solid #fbbd61;
+    box-shadow: 0px 0px 2px 1px #fbbd61;
+    background-color: #152E4D;
+    color: white;
+}
+  
+.darkMode .payment .shipping-options label {
+    color: white;
+}
+
+.darkMode .payment .shipping-options label:not(:last-child) {
+    border-bottom: 2px solid #fbbd61;;
+}
+
+.darkMode .payment .payment-options {
+    border: 2px solid #fbbd61;
+    box-shadow: 0px 0px 2px 1px #fbbd61;
+    background-color: #152E4D;
+    color: white;
+}
+
+.darkMode .payment .payment-options label:not(:last-child) {
+    border-bottom: 2px solid #fbbd61;
+}
+
+/* SIDEBAR */
+.darkMode .payment sidebar {
+    background-color: #777676;
+    border-left: #868484;
+}
+
+.darkMode .payment sidebar h2 {
+    color: #fbbd61;
+}
+
+.darkMode .payment .Price {
+    background-color: #3f3e3e;
+    border: 2px solid #fbbd61;
+    box-shadow: 0px 0px 2px 1px #fbbd61;
+}
+
+.darkMode .payment .product-quanlity {
+    background-color: #ffb039;
+}
+
+.darkMode .payment .product-description {
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.darkMode .payment .product-name {
+    color: #ffb039;
+}
+
+.darkMode .payment .product-cost {
+    color: #fc7121;
+}
+
+.darkMode .payment .order-summary,
+.darkMode .payment .price-total {
+    color: #f1f1f1;
+}
+
+.darkMode .payment .subtotal .product-cost,
+.darkMode .payment .ship-cost {
+    color: white;
+    font-weight: bold;
+}
+
+.darkMode .payment #show-discount {
+    color: #ffb039;
+}
+
+.darkMode .payment .discount-voucher input[type="text"] {
+    border: 2px solid #fbbd61;
+  box-shadow: 0px 0px 2px 1px #fbbd61;
+}
+
+.darkMode .payment .discount-voucher input[type="text"]:focus {
+    border: 3px solid #78dce8;
+    box-shadow: none;
+}
+
+.darkMode .payment button:hover {
+    background-color: #fbbd61;
+}
+
+.darkMode .payment .discount-popup {
+    background-color: #a09e9e;
+}
+
+.darkMode .payment .discount-popup h3 {
+    color: #ffffff;
+    padding-bottom: 10px;
+    margin-top: -7px;
+}
+
+.darkMode .payment .discount-item {
+    border: 2px solid #fbbd61;
+    box-shadow: 0px 0px 4px 2px #fbbd61;
+    background-color: white;
+}
+
+.darkMode .payment .discount-code {
+    color: #fc7121;
+}

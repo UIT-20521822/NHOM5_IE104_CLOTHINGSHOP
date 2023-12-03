@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: $fs-0;
+    line-height: $line-height-0;
+    color: $color-black-0;
+    background-color: $color-white-0;
+}
+
+::selection {
+    background-color: $color-orange-0;
+    color: $color-white-0;
+}
+
+.section {
+    padding: 5rem 0;
+}

@@ -1,0 +1,36 @@
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading h2 {
+    @include styleText($color-yellow-0, $fs-2, $fw-3);
+    letter-spacing: $letter-spacing-1;
+    word-spacing: $word-spacing-0;
+    transition: .5s;
+}
+
+.heading h2:hover {
+   color: $color-orange-0;
+}
+
+.heading p {
+    text-transform: capitalize;
+    letter-spacing: $letter-spacing-0;
+    @include styleText($color-black-0, $fs-0 + 3, $fw-1);
+}
+
+.heading p::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, $color-yellow-0, $color-orange-0);
+    display: block;
+    box-shadow: 0 0 20px 0 $color-yellow-0;
+
+    margin: $mg-3 auto;
+}
+
+.heading--white p {
+    color: white;
+}

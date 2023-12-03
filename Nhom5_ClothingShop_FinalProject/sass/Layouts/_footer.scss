@@ -1,0 +1,144 @@
+/* FOOTER */
+footer {
+    background-color: $color-black-5;
+}
+
+.footer__top h3 {
+    font-size: $fs-4;
+    font-weight: bold;
+    color: $color-yellow-0;
+    letter-spacing: $letter-spacing-3;
+    margin-bottom: 1.5rem;
+}
+
+.footer__top p {
+    color: $color-gray-8;
+    font-size: $fs-0 + 1;
+    line-height: 2em;
+    letter-spacing: $letter-spacing-3;
+}
+
+.footer__top .lawLogo {
+    width: 100px;
+    height: 40px;
+}
+
+.footer__top .socialIcon {
+    color: $color-white-0;
+    font-size: $fs-4;
+}
+
+.footer__top .socialIcon i {
+    margin: 0 $mg-0;
+    cursor: pointer;
+}
+
+.footer__top .socialIcon i:hover {
+    color: $color-yellow-0;
+}
+
+.footer__link, .footer__contact {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__link i {
+    color: $color-yellow-0;
+    margin-right: 1rem;
+}
+
+.footer__link a, .footer__contact a {
+    color: $color-gray-8;
+    text-decoration: none;
+    font-size: $fs-0 + 1;
+    line-height: 1.5em;
+    letter-spacing: $letter-spacing-3;
+    transition: all 0.5s;
+}
+
+.footer__link a:hover, .footer__contact a:hover {
+    color: $color-white-0;
+}
+
+.footer__contact i {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #4b4b50;
+    color: $color-white-0;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 1rem;
+}
+
+.footer__form {
+    margin-top: 3rem;
+}
+
+.footer__form label {
+    color: $color-yellow-0;
+    font-size: $fs-4;
+    font-weight: bold;
+    letter-spacing: $letter-spacing-3;
+}
+
+.footer__form input {
+    padding: $pd-2 - 1;
+    border-radius: 0;
+    border: none;
+    letter-spacing: $letter-spacing-3;
+    color: $color-gray-9;
+    height: auto;
+}
+
+.footer__form button {
+    background-color: $color-yellow-0;
+    padding: $pd-1 + 2 $pd-5;
+    letter-spacing: $letter-spacing-3;
+    border-radius: 0;
+    color: $color-white-0;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.footer__form button:hover {
+    background-color: $color-orange-0;
+    color: $color-black-0;
+}
+
+.footer__bottom {
+    background-color: $color-black-6;
+    text-align: center;
+    padding: 1rem 0;
+    letter-spacing: $letter-spacing-3;
+    color: $color-white-0;
+}
+
+.footer__bottom a {
+    text-decoration: none;
+    color: $color-yellow-0;
+    font-weight: $fw-3;
+    transition: all 0.5s;
+}
+
+.footer__bottom a:hover {
+    color: $color-white-0;
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .footer__form label {
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width: 575.98px) {
+    .footer__form label {
+        font-size: $fs-4 - 3;
+    }
+
+    .footer__form input, .footer__form button {
+        padding: $pd-1;
+        border: 0;
+        font-size: $fs-0;
+    }
+}

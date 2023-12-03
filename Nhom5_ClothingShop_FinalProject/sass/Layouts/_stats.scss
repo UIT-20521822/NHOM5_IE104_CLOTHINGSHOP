@@ -1,0 +1,30 @@
+/* STATS */
+.stats {
+    background-image: url(../img/stats_bg.jpg);
+    background-attachment: fixed;
+    @extend %backgroundImg;
+}
+
+.stats__content {
+    text-align: center;
+    color: $color-white-0;
+}
+
+.stats__item i {
+    @include styleText($color-yellow-0, 2.5rem, $fw-2);
+}
+
+.stats__item:hover i {
+    color: $color-red-0;
+}
+
+.stats__item h3 {
+    @include styleText($color-white-0, $fs-4, $fw-2);
+    letter-spacing: $letter-spacing-1;
+    margin: $mg-4 0 $mg-3;
+}
+
+.stats__item p {
+    @include styleText($color-orange-0, 3rem, $fw-3);
+    letter-spacing: $letter-spacing-0;
+}

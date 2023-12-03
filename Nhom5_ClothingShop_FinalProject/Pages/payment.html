@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANH TOÁN</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css//owl.theme.default.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+      <button class="sidebarMini__button">
+        <i class="fa fa-cog"></i>
+      </button>
+
+      <div class="sidebarMini__content">
+        <h2>Dark Mode</h2>
+        <div class="d-flex">
+          <span>Off</span>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+          <span>On</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <section class="payment">
+      <!-- MAIN -->
+      <main>
+        <h1>Nhóm 5</h1>
+        <!-- NAV -->
+        <nav class="payment-step">
+          <a href="./cart.html">Giỏ hàng</a>
+          >
+          <p>Thông tin giao hàng</p>
+        </nav>
+        <!-- FORM Thông tin giao hàng-->
+        <div class="payment-info">
+          <h2>Thông tin giao hàng</h2>
+          <form>
+            <div class="form-group">
+              <div class="form-group-name">
+                <label for="name">Họ và tên:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nhập họ và tên"
+                  required
+                />
+              </div>
+
+              <div class="form-group-email-tel">
+                <div class="form-group-email">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Nhập email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group-tel">
+                  <label for="tel">Số điện thoại:</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="Nhập số điện thoại"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group-address">
+                <label for="address">Địa chỉ giao hàng:</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  placeholder="Nhập địa chỉ"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Phương thức vận chuyển -->
+        <div class="shipping-method">
+          <h2>Phương thức vận chuyển</h2>
+          <div class="shipping-options">
+            <label>
+              <input type="radio" name="shipping" value="standard" />
+              <span class="checkmark"></span>
+              <span class="shipping-type">Giao hàng tiêu chuẩn</span>
+              <span class="shipping-cost">30,000</span>
+            </label>
+
+            <label>
+              <input type="radio" name="shipping" value="express" />
+              <span class="checkmark"></span>
+              <span class="shipping-type">Giao hàng nhanh</span>
+              <span class="shipping-cost">50,000</span>
+            </label>
+          </div>
+        </div>
+        <!-- Phương thức thanh toán -->
+        <div class="payment-method">
+          <h2>Phương thức thanh toán</h2>
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="cash" />
+              <span class="checkmark"></span>
+              Tiền mặt
+            </label>
+
+            <label>
+              <input type="radio" name="payment" value="paypal" />
+              <span class="checkmark"></span>
+              PayPal
+            </label>
+
+            <label>
+              <input type="radio" name="payment" value="bank-transfer" />
+              <span class="checkmark"></span>
+              Chuyển khoản ngân hàng
+            </label>
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar -->
+      <sidebar>
+        <h2>Thông tin đơn hàng</h2>
+        <div class="Price">
+          <!-- Danh sách sản phẩm -->
+          <div class="product-list">
+            <ul>
+              <li>
+                <div class="product-detail product-detail-1">
+                  <div class="product-container">
+                    <img
+                      src="../img/product-1.jpg"
+                      alt="Sản phẩm 1"
+                      class="product-images"
+                    />
+                    <p class="product-quanlity">1</p>
+                  </div>
+                  <div>
+                    <p class="product-name">CAMELLIA DRESS</p>
+                    <p class="product-description">Size: S</p>
+                  </div>
+                </div>
+                <p class="product-cost">399,000</p>
+              </li>
+              <li>
+                <div class="product-detail">
+                  <div class="product-container">
+                    <img
+                      src="../img/product-2.jpg"
+                      alt="Sản phẩm 2"
+                      class="product-images"
+                    />
+                    <p class="product-quanlity">2</p>
+                  </div>
+                  <div>
+                    <p class="product-name">FASHIONABLE RING</p>
+                    <p class="product-description">Màu: Silver</p>
+                  </div>
+                </div>
+                <p class="product-cost">842,000</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Mã giảm giá -->
+          <div class="discount-voucher">
+            <input type="text" name="discount" placeholder="Mã giảm giá" />
+            <button>Sử dụng</button>
+            <div class="voucher-show">
+              <img
+                src="../img/ticket-voucher.png"
+                alt="Icon Ticket"
+                class="ticket-icon"
+              />
+              <p class="voucher-link">
+                <a href="#" id="show-discount">Xem thêm mã giảm giá</a>
+              </p>
+            </div>
+            <div class="discount-overlay" id="overlayPayment">
+              <div class="discount-popup">
+                <h3>Chọn mã giảm giá</h3>
+                <div class="discount-item">
+                  <div class="discount-detail">
+                    <img
+                      src="../img/discount.jpeg"
+                      alt="Icon Discount"
+                      class="discount-icon"
+                    />
+                    <p class="discount-code">NHOM5GIAM10</p>
+                  </div>
+                  <p>Giảm 10% giá trị của đơn hàng trên 5,000,000</p>
+                </div>
+                <div class="discount-item">
+                  <div class="discount-detail">
+                    <img
+                      src="../img/discount.jpeg"
+                      alt="Icon Discount"
+                      class="discount-icon"
+                    />
+                    <p class="discount-code">NHOM5GIAM5</p>
+                  </div>
+                  <p>Giảm 5% giá trị của đơn hàng trên 2,500,000</p>
+                </div>
+                <button id="close-popup">Đóng</button>
+              </div>
+            </div>
+            <!-- Tính tiền -->
+            <div class="order-summary">
+              <div class="subtotal">
+                <p>Tạm tính <span class="product-cost">1,241,000</span></p>
+              </div>
+              <div class="shipping-fee">
+                <p>Phí vận chuyển <span class="ship-cost">30,000</span></p>
+              </div>
+            </div>
+
+            <div class="price-total">
+              <p>Tổng cộng <span class="product-cost">1,271,000</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Button đặt hàng -->
+        <button class="order-button" id="order-button">Đặt hàng</button>
+      </sidebar>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQUERY -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL JS -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- BACK TOP TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

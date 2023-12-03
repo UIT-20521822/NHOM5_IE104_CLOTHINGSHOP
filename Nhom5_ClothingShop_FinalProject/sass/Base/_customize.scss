@@ -1,0 +1,34 @@
+// CUSTOMIZE OWL CAROUSEL LIBRARY
+.owl-carousel {
+    .owl-nav {
+        button {
+            &.owl-prev, &.owl-next {
+                @include styleText($color-yellow-0, $fs-4 - 3, $fw-2);
+                background-color: $color-white-0;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                // box-shadow: trụcX trụcY độMờCủaBóng(Blur) độLanCủaBóng GiáTrịMàu
+                box-shadow: 0 2px 8px 2px $color-black-2;
+
+                // không cần khai báo relative vì thẻ cha bên ngoài thư viện có sẵn
+                position: absolute;
+                top: 35%;
+
+                &:hover {
+                    background-color: $color-white-0;
+                    color: $color-orange-0;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            &.owl-prev {
+                left: -30px;
+            }
+            &.owl-next {
+                right: -30px;
+            }
+        }
+    }
+}

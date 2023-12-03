@@ -1,0 +1,12 @@
+.darkMode .collectionModal .modal-content {
+    background-color: $color-dark-0;
+    color: $color-white-0;
+}
+
+.darkMode .collectionModal .modal-content .modal-header {
+    border-color: $color-white-0;
+}
+
+.darkMode .collectionModal .modal-content .modal-header .close {
+    color: $color-dark-5;
+}

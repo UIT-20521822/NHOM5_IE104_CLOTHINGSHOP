@@ -1,0 +1,16 @@
+.feedback {
+    padding: $mg-3 0;
+    background: linear-gradient(85deg, $color-yellow-0, $color-orange-0 40%);
+    .feedback__content {
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            color: $color-white-0;
+            margin-bottom: $mg-2;
+            &:hover {
+                color: $color-yellow-0;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+/* BACK TO TOP */
+.backToTop {
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* back-to-top button visible */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.backToTop i {
+    color: $color-white-0;
+    border: 2px solid $color-orange-0;
+    background-color: $color-orange-0;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+}

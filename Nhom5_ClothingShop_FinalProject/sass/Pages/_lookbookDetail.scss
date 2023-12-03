@@ -1,0 +1,42 @@
+.lookbookDetail {
+    .lookbookDetail__content {
+        width: 90%;
+        margin: $mg-4 auto;
+            h5 {
+                border-bottom: 2px solid $color-yellow-0;
+                padding: $pd-1 0;
+                margin-bottom: $mg-2;
+            }
+            .latest__detail {
+                margin-bottom: $mg-1;
+                font-weight: $fw-2;
+                .latest__img {
+                    padding-right: 0;
+                }
+            }
+        .lookbookDetail__imgs {
+            text-align: center;
+            img {
+                margin: $mg-1;
+            }
+        }
+        .date {
+            @include styleText($color-yellow-0, $fs-0, $fw-1);
+            letter-spacing: 1px;
+            i {
+                margin-right: $mg-0;
+            }
+        }
+    }
+
+    @include responsive("large") {
+        .lookbookDetail__content {
+            .latest__detail {
+                .date {
+                    font-size: $fs-0 - 3;
+                }
+            }
+        }
+    }
+}
+

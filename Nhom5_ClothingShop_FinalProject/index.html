@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHOM5 - IE104</title>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css//owl.theme.default.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+          <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+          </button>
+    
+          <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+              <span>Off</span>
+              <label class="switch" for="checkbox">
+                <input type="checkbox" name="" id="checkbox" />
+                <div class="slider"></div>
+              </label>
+              <span>On</span>
+            </div>
+          </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <p class="header__top">DON&apos;T BE THE SAME - BE DIFFERENT</p>
+
+      <div class="container-md header__navBar">
+        <div class="text-right mb-0">
+          <a href="tel:0998761234"
+            ><i class="fa-solid fa-phone"></i>
+            <span class="mx-3 border-right pr-2">099.876.1234</span></a
+          >
+          <a href="#"><i class="fa fa-search border-right pr-2"></i></a>
+          <a href="./Pages/logIn.html"><i class="mx-3 fa fa-user border-right pr-2"></i></a>
+          <span class="header__cart pr-4">
+            <a href="./Pages/cart.html"><i class="fa fa-shopping-cart"></i>
+            </a>
+            <div class="cart__detail">
+              <div class="cart__item">
+                <img class="img-fluid" src="./img/dam-1.jpg" alt="dam-1">
+                <div class="cart__itemInfo">
+                  <p>CAMELLIA DRESS</p>
+                  <p>Size: S</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>1</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">399,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__item">
+                <img class="img-fluid" src="./img/pk-6.jpg" alt="pk-6">
+                <div class="cart__itemInfo">
+                  <p>FASHIONABLE RING</p>
+                  <p>Màu: Silver</p>
+                  <div class="cart__info">
+                    <div class="cart__number">
+                      <span>-</span>
+                      <span>2</span>
+                      <span>+</span>
+                    </div>
+                    <span class="cart__price">421,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="cart__priceTotal">
+                <p>TỔNG TIỀN:</p>
+                <p>1,342,000</p>
+              </div>
+            </div>
+          </span>
+
+        </div>
+
+        <nav class="navbar navbar-expand-md px-0">
+          <a class="navbar-brand" href="#">
+            NHOM5
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#homeNavBar"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="homeNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active line">
+                <a class="nav-link" href="#">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item dropdown line">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  QUẦN ÁO
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./Pages/clothes.html">Tất cả sản phẩm</a>
+                  <a class="dropdown-item" href="./Pages/shirt.html">Áo sơ mi</a>
+                  <a class="dropdown-item" href="./Pages/t-shirt.html">Áo thun</a>
+                  <a class="dropdown-item" href="./Pages/dress.html">Đầm</a>
+                  <a class="dropdown-item" href="./Pages/skirt.html">Chân váy</a>
+                  <a class="dropdown-item" href="./Pages/pants.html">Quần</a>
+                </div>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./Pages/jewelry.html">PHỤ KIỆN</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./Pages/saleOff.html">SALE OFF</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link" href="./Pages/lookbook.html">LOOKBOOK</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Menu cố định khi trượt màn hình -->
+    <header id="headerFixed">
+      <nav class="navbar navbar-expand-md container">
+        <a class="navbar-brand" href="#">
+          NHOM5
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#homeNavBar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="homeNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active line">
+              <a class="nav-link" href="#">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown line">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                QUẦN ÁO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Pages/clothes.html">Tất cả sản phẩm</a>
+                <a class="dropdown-item" href="./Pages/shirt.html">Áo sơ mi</a>
+                <a class="dropdown-item" href="./Pages/t-shirt.html">Áo thun</a>
+                <a class="dropdown-item" href="./Pages/dress.html">Đầm</a>
+                <a class="dropdown-item" href="./Pages/skirt.html">Chân váy</a>
+                <a class="dropdown-item" href="./Pages/pants.html">Quần</a>
+              </div>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./Pages/jewelry.html">PHỤ KIỆN</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./Pages/saleOff.html">SALE OFF</a>
+            </li>
+            <li class="nav-item line">
+              <a class="nav-link" href="./Pages/lookbook.html">LOOKBOOK</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="homeCarousel">
+      <div id="carouselHome" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="container carousel-indicators">
+          <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselHome" data-slide-to="1"></li>
+          <li data-target="#carouselHome" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="homeCarousel__overlay"></div>
+            <div class="container carousel-caption">
+              <div class="col-12 col-lg-9 p-0">
+                <p class="animate__animated animate__fadeInDown">
+                  FASHION, FREEDOM, FUTURE
+                </p>
+                <h2 class="animate__animated animate__fadeInDown">
+                  THẺ THÀNH VIÊN
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Chỉ với vài thao tác đơn giản, bạn có thể đăng ký trở thành khách hàng thành viên thân thiết của NHOM5 với vô số voucher ưu đãi mỗi tháng.
+                </p>
+                <div
+                  class="homeCarousel__trailer animate__animated animate__fadeInUp"
+                >
+                  <span><i class="fa fa-tshirt"></i></span>
+                  <button class="btn">
+                    <span>
+                      <i class="fa fa-play"></i>
+                      LÀM THẺ NGAY
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="homeCarousel__overlay"></div>
+            <div class="container carousel-caption">
+              <div class="col-12 col-lg-9 p-0">
+                <p class="animate__animated animate__fadeInDown">
+                  FASHION, FREEDOM, FUTURE
+                </p>
+                <h2 class="animate__animated animate__fadeInDown">
+                  THẺ THÀNH VIÊN
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Chỉ với vài thao tác đơn giản, bạn có thể đăng ký trở thành khách hàng thành viên thân thiết của NHOM5 với vô số voucher ưu đãi mỗi tháng.
+                </p>
+                <div
+                  class="homeCarousel__trailer animate__animated animate__fadeInUp"
+                >
+                  <span><i class="fa fa-tshirt"></i></span>
+                  <button class="btn">
+                    <span>
+                      <i class="fa fa-play"></i>
+                      LÀM THẺ NGAY
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="homeCarousel__overlay"></div>
+            <div class="container carousel-caption">
+              <div class="col-12 col-lg-9 p-0">
+                <p class="animate__animated animate__fadeInDown">
+                  FASHION, FREEDOM, FUTURE
+                </p>
+                <h2 class="animate__animated animate__fadeInDown">
+                  THẺ THÀNH VIÊN
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Chỉ với vài thao tác đơn giản, bạn có thể đăng ký trở thành khách hàng thành viên thân thiết của NHOM5 với vô số voucher ưu đãi mỗi tháng.
+                </p>
+                <div
+                  class="homeCarousel__trailer animate__animated animate__fadeInUp"
+                >
+                  <span><i class="fa fa-tshirt"></i></span>
+                  <button class="btn">
+                    <span>
+                      <i class="fa fa-play"></i>
+                      LÀM THẺ NGAY
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="collection section">
+      <div class="heading">
+        <h2>BỘ SƯU TẬP</h2>
+        <p>don&apos;t be the same - be different</p>
+      </div>
+
+      <div class="collection__content container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5">
+            <img
+              class="img-fluid"
+              src="./img/collection-1.jpg"
+              alt="collection-1"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 mt-3 mt-md-0">
+            <h3>
+              <a href="#" data-toggle="modal" data-target="#collectionModal_1"
+                >SWEET SPRING</a
+              >
+            </h3>
+            <h4><i class="fa fa-calendar-alt mr-2"></i>01/01/2024</h4>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-7">
+            <h3>
+              <a href="#" data-toggle="modal" data-target="#collectionModal_2"
+                >BACK TO SCHOOL</a
+              >
+            </h3>
+            <h4><i class="fa fa-calendar-alt mr-2"></i>13/07/2024</h4>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <img
+              class="img-fluid"
+              src="./img/collection-2.jpg"
+              alt="collection-2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST-SELLER -->
+    <section class="bestSeller">
+      <div class="bestSeller__content">
+        <div class="row">
+          <div class="col-xl-4 col-md-3 col-12 bestSeller__left">
+            <div class="heading">
+              <h2>BEST SELLER</h2>
+              <p>don&apos;t be the same - be different</p>
+            </div>
+          </div>
+
+          <div class="col-xl-8 col-md-9 col-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="shirt-tab"
+                  data-toggle="tab"
+                  href="#shirt"
+                  role="tab"
+                  >Áo sơ mi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="t-shirt-tab"
+                  data-toggle="tab"
+                  href="#t-shirt"
+                  role="tab"
+                  >Áo thun</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="dress-tab"
+                  data-toggle="tab"
+                  href="#dress"
+                  role="tab"
+                  >Đầm</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="skirts-tab"
+                  data-toggle="tab"
+                  href="#skirts"
+                  role="tab"
+                  >Chân váy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="pants-tab"
+                  data-toggle="tab"
+                  href="#pants"
+                  role="tab"
+                  >Quần</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="jelwery-tab"
+                  data-toggle="tab"
+                  href="#jelwery"
+                  role="tab"
+                  >Phụ kiện</a
+                >
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="shirt" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/somi-1.jpg"
+                      class="card-img-top"
+                      alt="somi-1"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title">TOPSTICHES SHIRT</h5>
+                      <div class="card__price">
+                        <span>400,000</span>
+                        <span>360,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/somi-2.jpg"
+                      class="card-img-top"
+                      alt="somi-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">LOOSE SHIRT</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>310,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/somi-3.jpg"
+                      class="card-img-top"
+                      alt="somi-3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">NORMAD SHIRT</h5>
+                      <div class="card__price">
+                        <span>500,000</span>
+                        <span>320,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/somi-4.jpg"
+                      class="card-img-top"
+                      alt="somi-4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">CAROL TOP</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>370,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/somi-5.jpg"
+                      class="card-img-top"
+                      alt="somi-5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">CHECKED SHIRT</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>360,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/somi-6.jpg"
+                      class="card-img-top"
+                      alt="somi-6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">AUDREY SHIRT</h5>
+                      <div class="card__price">
+                        <span>450,000</span>
+                        <span>350,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="t-shirt" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/aothun-1.jpg"
+                      class="card-img-top"
+                      alt="aothun-1"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title">YOU ARE MY CUTE CRUSH</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>260,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/aothun-2.jpg"
+                      class="card-img-top"
+                      alt="aothun-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">AINE TOP</h5>
+                      <div class="card__price">
+                        <span>430,000</span>
+                        <span>301,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/aothun-3.jpg"
+                      class="card-img-top"
+                      alt="aothun-3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">THE COCKTAIL TEE</h5>
+                      <div class="card__price">
+                        <span>300,000</span>
+                        <span>270,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/aothun-4.jpg"
+                      class="card-img-top"
+                      alt="aothun-4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">TURN ENEMIES INTO FRIENDS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>260,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/aothun-5.jpg"
+                      class="card-img-top"
+                      alt="aothun-5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">CRACKY TOP</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>220,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/aothun-6.jpg"
+                      class="card-img-top"
+                      alt="aothun-6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">BESTFRIEND TEE</h5>
+                      <div class="card__price">
+                        <span>225,000</span>
+                        <span>170,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="dress" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/dam-1.jpg"
+                      class="card-img-top"
+                      alt="dam-1"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title">CAMELLIA DRESS</h5>
+                      <div class="card__price">
+                        <span>490,000</span>
+                        <span>399,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/dam-2.jpg"
+                      class="card-img-top"
+                      alt="dam-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">JENNY DRESS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>430,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/dam-3.jpg"
+                      class="card-img-top"
+                      alt="dam-3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">HANNAH PRETTY DRESS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>250,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/dam-4.jpg"
+                      class="card-img-top"
+                      alt="dam-4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">UMI DRESS</h5>
+                      <div class="card__price">
+                        <span>599,000</span>
+                        <span>460,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/dam-5.jpg"
+                      class="card-img-top"
+                      alt="dam-5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">ZANE PINK BLINK DRESS</h5>
+                      <div class="card__price">
+                        <span>870,000</span>
+                        <span>440,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/dam-6.jpg"
+                      class="card-img-top"
+                      alt="dam-6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">KAITO DRESS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>570,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="skirts" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-1.jpg"
+                      class="card-img-top"
+                      alt="chanvay-1"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title">DESI SKIRT</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>140,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-2.jpg"
+                      class="card-img-top"
+                      alt="chanvay-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">WILLOW PINK TULIP SKIRT</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>360,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-3.jpg"
+                      class="card-img-top"
+                      alt="chanvay-3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">TANNY DARK BLUE SKIRT</h5>
+                      <div class="card__price">
+                        <span>685,000</span>
+                        <span>410,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-4.jpg"
+                      class="card-img-top"
+                      alt="chanvay-4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">TERIN SKIRT</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>350,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-5.jpg"
+                      class="card-img-top"
+                      alt="chanvay-5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">WENDY JEANS SKIRT</h5>
+                      <div class="card__price">
+                        <span>670,000</span>
+                        <span>370,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/chanvay-6.jpg"
+                      class="card-img-top"
+                      alt="chanvay-6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MYRA SKIRT</h5>
+                      <div class="card__price">
+                        <span>450,000</span>
+                        <span>300,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pants" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/quan-1.jpg"
+                      class="card-img-top"
+                      alt="quan-1"
+                    />
+
+                    <div class="card-body">
+                      <h5 class="card-title">TAKI SHORT</h5>
+                      <div class="card__price">
+                        <span>333,000</span>
+                        <span>310,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/quan-2.jpeg"
+                      class="card-img-top"
+                      alt="quan-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">STRAIGHT JEANS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>430,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/quan-3.jpg"
+                      class="card-img-top"
+                      alt="quan-3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">PAIGE WHITE JEANS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>420,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/quan-4.jpg"
+                      class="card-img-top"
+                      alt="quan-4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">PALAZZO CREAM PANTS</h5>
+                      <div class="card__price">
+                        <span>400,000</span>
+                        <span>370,000 </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/quan-5.jpg"
+                      class="card-img-top"
+                      alt="quan-5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">LOTTO GRAY SHORTS</h5>
+                      <div class="card__price">
+                        <span>310,000</span>
+                        <span>260,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img
+                      src="./img/quan-6.jpg"
+                      class="card-img-top"
+                      alt="quan-6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">TORN JEANS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>420,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="jelwery" role="tabpanel">
+                <div class="owl-carousel owl-theme bestSeller__carousel">
+                  <div class="card">
+                    <img src="./img/pk-1.jpg" class="card-img-top" alt="pk-1" />
+
+                    <div class="card-body">
+                      <h5 class="card-title">PLEASE REUSE ME! TOTE</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>250,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./img/pk-2.jpg" class="card-img-top" alt="pk-2" />
+                    <div class="card-body">
+                      <h5 class="card-title">CUTE TURBAN</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>100,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./img/pk-3.jpg" class="card-img-top" alt="pk-3" />
+                    <div class="card-body">
+                      <h5 class="card-title">SILVER WHEEL</h5>
+                      <div class="card__price">
+                        <span>999,000</span>
+                        <span>500,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./img/pk-4.jpg" class="card-img-top" alt="pk-4" />
+                    <div class="card-body">
+                      <h5 class="card-title">GOLD BANGLE</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>1,100,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./img/pk-5.jpg" class="card-img-top" alt="pk-5" />
+                    <div class="card-body">
+                      <h5 class="card-title">LONG SOCKS</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>50,000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./img/pk-6.jpg" class="card-img-top" alt="pk-6" />
+                    <div class="card-body">
+                      <h5 class="card-title">FASHIONABLE RING</h5>
+                      <div class="card__price">
+                        <span></span>
+                        <span>421,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team section">
+      <div class="container">
+        <div class="heading">
+          <h2>NHÀ THIẾT KẾ</h2>
+          <p>don&apos;t be the same - be different</p>
+        </div>
+
+        <div class="team__content">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="team__img">
+                <img
+                  class="img-fluid"
+                  src="./img/designer-1.jpg"
+                  alt="designer-1"
+                />
+                <div class="team__overlay"></div>
+                <div class="team__play">
+                  <div>
+                    <a href="#"><i class="fa fa-tshirt"></i></a>
+                    <a href="#">Tìm hiểu thêm</a>
+                    <p class="date">Bộ sưu tập mới nhất: 05/01/2023</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team__title mb-3 mb-md-0">
+                <h3>Emma Nguyen</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="team__img">
+                <img
+                  class="img-fluid"
+                  src="./img/designer-2.jpg"
+                  alt="designer-2"
+                />
+                <div class="team__overlay"></div>
+                <div class="team__play">
+                  <div>
+                    <a href="#"><i class="fa fa-tshirt"></i></a>
+                    <a href="#">Tìm hiểu thêm</a>
+                    <p class="date">Bộ sưu tập mới nhất: 18/04/2023</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team__title mb-3 mb-md-0">
+                <h3>Helly Huynh</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="team__img">
+                <img class="img-fluid" src="./img/designer-3.jpg" alt="designer-3" />
+                <div class="team__overlay"></div>
+                <div class="team__play">
+                  <div>
+                    <a href="#"><i class="fa fa-tshirt"></i></i></a>
+                    <a href="#">Tìm hiểu thêm</a>
+                    <p class="date">Bộ sưu tập mới nhất: 22/10/2023</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team__title mb-3 mb-md-0">
+                <h3>Sophia Kim</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="team__img">
+                <img class="img-fluid" src="./img/designer-4.jpg" alt="designer-4" />
+                <div class="team__overlay"></div>
+                <div class="team__play">
+                  <div>
+                    <a href="#"><i class="fa fa-tshirt"></i></a>
+                    <a href="#">Tìm hiểu thêm</a>
+                    <p class="date">Bộ sưu tập mới nhất: 21/08/2023</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team__title mb-3 mb-md-0">
+                <h3>John Tran</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="feedback">
+      <div class="feedback__content">
+        <div class="heading">
+          <h2>FEEDBACK</h2>
+          <p>don&apos;t be the same - be different</p>
+        </div>
+
+        <div class="owl-carousel owl-theme feedback__carousel">
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-1.jpg" alt="customer-1" />
+                </div>
+                <div>
+                  <p class="card__name">Trần Anh Minh</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Shop bán đồ đẹp, chất lượng. Mua tặng người yêu rất hợp lý nha !!!
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-1.jpg" alt="feedback-1">
+            </div>
+          </div>
+
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-2.jpg" alt="customer-2" />
+                </div>
+                <div>
+                  <p class="card__name">Phan Bảo Vy</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Vải may đồ tốt, không bị ra màu khi giặt. Tuy nhiên, giá đồ hơi mắc so với mặt bằng chung.
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-2.jpg" alt="feedback-2">
+            </div>
+          </div>
+
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-3.jpg" alt="customer-3" />
+                </div>
+                <div>
+                  <p class="card__name">Đoàn Trung Khánh</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Mình mua tặng nhỏ em gái ở nhà nhân dịp sinh nhật. Đồ shop rất okie nhé ^^
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-3.jpg" alt="feedback-3">
+            </div>
+          </div>
+
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-4.jpg" alt="customer-4" />
+                </div>
+                <div>
+                  <p class="card__name">Phạm Tiến Phát</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Bạn gái mình khen đồ shop mặc lên trông rất cute nha.
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-4.jpg" alt="feedback-4">
+            </div>
+          </div>
+
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-5.jpg" alt="customer-5" />
+                </div>
+                <div>
+                  <p class="card__name">Hồ Bảo An</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Đồ tuy đẹp, dễ phối nhưng không đa dạng mẫu mã lắm.
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-5.jpg" alt="feedback-5">
+            </div>
+          </div>
+
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/customer-6.jpg" alt="customer-6" />
+                </div>
+                <div>
+                  <p class="card__name">Châu Giang</p>
+                  <div class="card__stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">
+                Tone màu lạ và đẹp nha. Nhưng mình chỉ đánh giá shop 4 sao thôi vì vận chuyển hơi lâu. 
+              </p>
+
+              <img class="feedback__img" src="./img/feedback-6.jpg" alt="feedback-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats section">
+          <div class="heading heading--white">
+            <h2>THÀNH TỰU</h2>
+            <p>don&apos;t be the same - be different</p>
+          </div>
+    
+          <div class="stats__content container">
+            <div class="row">
+              <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="stats__item">
+                  <i class="fa fa-store"></i>
+                  <h3>Cửa hàng</h3>
+                  <p>13</p>
+                </div>
+              </div>
+    
+              <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="stats__item">
+                  <i class="fa fa-user"></i>
+                  <h3>Nhân viên</h3>
+                  <p>567</p>
+                </div>
+              </div>
+    
+              <div class="col-6 col-lg-3">
+                <div class="stats__item">
+                  <i class="fa fa-tshirt"></i>
+                  <h3>Bộ sưu tập</h3>
+                  <p>123</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="stats__item">
+                  <i class="fa fa-users"></i>
+                  <h3>Khách hàng</h3>
+                  <p>3218</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map">
+      <div class="map__address">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.231171235189!2d106.80047917365687!3d10.87001415746329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sen!2sus!4v1700846301257!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__top section">
+        <div class="container">
+          <div class="footer__grid row">
+            <div class="col-12 col-lg-4">
+              <h3>NHOM5</h3>
+              <p>
+                NHOM5 nhận đặt hàng trực tuyến và giao hàng tận nơi. Ngoài ra, bạn cũng có thể mua sắm trực tiếp tại hệ thống cửa hàng của NHOM5.
+              </p>
+              <img class="lawLogo img-fluid" src="./img/logo-bo-cong-thuong-da-thong-bao.png" alt="logo-bo-cong-thuong-da-thong-bao">
+              <p class="socialIcon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>HỖ TRỢ</h3>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách đổi - trả - hoàn tiền</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo hành - bồi hoàn</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách vận chuyển</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Chính sách bảo mật</a>
+              </div>
+              <div class="footer__link">
+                <i class="fa fa-long-arrow-alt-right"></i>
+                <a href="#">Phương thức thanh toán và xuất hóa đơn</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <h3>LIÊN HỆ</h3>
+              <div class="footer__contact">
+                <i class="fa fa-map-marker-alt"></i>
+                <a href="#">Đại học Công nghệ thông tin</a>
+              </div>
+              <div class="footer__contact">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:nhom5@gmail.com"
+                  >nhom5@gmail.com</a
+                >
+              </div>
+              <div class="footer__contact">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0998761234">099.876.1234</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__form">
+            <form>
+              <div class="form-group form-row">
+                <label class="col-12 col-lg-4 col-form-label" for="emailFooter"
+                  >ĐĂNG KÝ NHẬN VOUCHER</label
+                >
+
+                <div class="col-8 col-lg-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailFooter"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+
+                <div class="col-4 col-lg-2 text-center">
+                  <button type="submit" class="btn">ĐĂNG KÝ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>
+          &copy; 2023 Clothing Shop. All rights reserved | Design by
+          <a href="#">Nhom5</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div
+      class="collectionModal modal fade"
+      id="collectionModal_1"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">SWEET SPRING</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              class="img-fluid"
+              src="./img/collection-1-1.jpg"
+              alt="collection-1-1"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-1-2.jpg"
+              alt="collection-1-2"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-1-3.jpg"
+              alt="collection-1-3"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-1-4.jpg"
+              alt="collection-1-4"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-1-5.jpg"
+              alt="collection-1-5"
+            />
+            <p>
+              Duis venenatis, turpis eu bibendum porttitor, sapien quam
+              ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac
+              fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+              Pellentesque pellentesque tempor enim, in dapibus turpis porttitor
+              quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus
+              ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit
+              amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+              sed finibus sem...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="collectionModal modal fade"
+      id="collectionModal_2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">BACK TO SCHOOL</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              class="img-fluid"
+              src="./img/collection-2-1.jpg"
+              alt="collection-2-1"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-2-2.jpg"
+              alt="collection-2-2"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-2-3.jpg"
+              alt="collection-2-3"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-2-4.jpg"
+              alt="collection-2-4"
+            />
+            <img
+              class="img-fluid"
+              src="./img/collection-2-5.jpg"
+              alt="collection-2-5"
+            />
+            <p>
+              Duis venenatis, turpis eu bibendum porttitor, sapien quam
+              ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac
+              fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+              Pellentesque pellentesque tempor enim, in dapibus turpis porttitor
+              quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus
+              ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit
+              amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+              sed finibus sem...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- JQUERY -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- OWL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+      $(".bestSeller__carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2,
+            margin: 5,
+          },
+          600: {
+            items: 3,
+            margin: 5,
+          },
+          1000: {
+            items: 4,
+            margin: 5,
+          },
+          1450: {
+            items: 4,
+            margin: 15,
+          },
+        },
+      });
+
+      $(".feedback__carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <!-- BACK TOP TOP JS -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
