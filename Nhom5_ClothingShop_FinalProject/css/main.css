@@ -17,7 +17,6 @@ body {
   background-color: #fff;
 }
 
-/* KHI PHỦ CHUỘT LÊN MỘT VÙNG */
 ::selection {
   background-color: #ec7532;
   color: #fff;
@@ -248,7 +247,6 @@ header .header__navBar .header__cart .cart__detail::before {
 }
 
 @media screen and (max-width: 991.98px) {
-  /* HEADER */
   header .navbar-brand {
     max-width: 180px;
   }
@@ -270,7 +268,6 @@ header .header__navBar .header__cart .cart__detail::before {
   header .navbar-toggler {
     color: #fbbd61;
   }
-  /* khi click chuột vào nút button */
   header .navbar-toggler:focus {
     outline: none;
   }
@@ -333,11 +330,7 @@ footer {
 
 .footer__link, .footer__contact {
   margin-bottom: 1rem;
-  /* giới hạn vùng kích thước của các thẻ con
-  => để chúng không bị tràn và lẫn lộn nhau, 
-          2 thẻ con luôn nằm trên cùng 1 hàng */
   display: flex;
-  /* canh giữa theo chiều dọc => chữ hiện giữa icon */
   align-items: center;
 }
 
@@ -381,15 +374,11 @@ footer {
 }
 
 .footer__form input {
-  /* làm form input to ra nên dùng PADDING */
   padding: 14px;
   border-radius: 0;
   border: none;
-  /* chữ khi người dùng gõ vào ô input */
   letter-spacing: 1px;
   color: #888888;
-  /* chiều cao tự động khi nội dung bên trong nhiều hơn
-  hoặc chữ to hơn, hoặc khi padding được xét to ra */
   height: auto;
 }
 
@@ -433,7 +422,6 @@ footer {
   }
 }
 @media screen and (max-width: 575.98px) {
-  /* FOOTER */
   .footer__form label {
     font-size: 21px;
   }
@@ -451,10 +439,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-/* 
-* first-child : thứ tự trước, loại thẻ sau
-* first-of-type : loại thẻ trước, thứ tự sau
-*/
 #carouselHome .carousel-item .carousel-caption p:first-of-type {
   letter-spacing: 2px;
   color: #fbbd61;
@@ -479,7 +463,6 @@ footer {
   animation-delay: 1s;
 }
 
-/* thẻ span là con trực tiếp của class homeCarousel__trailer */
 .homeCarousel__trailer > span {
   width: 48px;
   height: 48px;
@@ -487,9 +470,7 @@ footer {
   border: 2px solid #fff;
   border-radius: 50%;
   font-size: 0.8rem;
-  /* canh chữ PG ở giữa theo chiều ngang của hình tròn */
   text-align: center;
-  /* canh chữ PG ở giữa theo chiều dọc của hình tròn */
   line-height: 48px;
   margin-right: 8px;
 }
@@ -503,7 +484,6 @@ footer {
   color: #fff;
   background: linear-gradient(to right, #fbbd61, #ec7532);
   position: relative;
-  /* các thẻ con nằm ngoài thẻ cha button đều bị che (biến mất khỏi giao diện luôn), kể cả viền mép ngoài thẻ cha cũng bị che */
   overflow: hidden;
   outline: none;
 }
@@ -512,9 +492,6 @@ footer {
   color: #fff;
 }
 
-/*
-* B1: xây dựng overlay phủ lên thẻ cha (button)
-*/
 .homeCarousel__trailer button::before {
   content: "";
   width: 110%;
@@ -525,15 +502,11 @@ footer {
   top: 0;
   left: 0;
   z-index: 1;
-  /* transform phải viết tất cả lên 1 hàng, 
-      nếu không sẽ bị đè code */
-  /* chưa hover */
   transform: skewX(30deg) translateX(-110%);
   transition: 0.5s;
 }
 
 .homeCarousel__trailer button:hover::before {
-  /* đã hover */
   transform: skewX(30deg) translateX(-10px);
 }
 
@@ -558,14 +531,9 @@ footer {
   height: 10px;
   border-radius: 50%;
   border: 2px solid white;
-  /* màu nền trong suốt */
   background: transparent;
   opacity: 1;
-  /* vùng border sẽ giữ nguyên kích thước,
-  dù có thêm padding */
   box-sizing: border-box;
-  /* vùng phủ của màu nền so với viền */
-  /* background-clip: border-box; */
 }
 
 #carouselHome .carousel-indicators li.active {
@@ -578,9 +546,6 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  /* dùng màu trải chỉ áp dụng cho 
-          background-color & background-image, 
-  không dùng cho các loại background khác */
   background: linear-gradient(to top, #000, transparent);
 }
 
@@ -593,7 +558,6 @@ footer {
 }
 
 #carouselHome .carousel-item {
-  /* đơn vị % chỉ đi theo kích thước của thẻ cha gần nhất với nó */
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -611,6 +575,11 @@ footer {
   background-image: url(../img/banner-web-3.jpg);
 }
 
+@media screen and (max-width: 767.98px) {
+  #carouselHome .carousel-item .carousel-caption h2 {
+    font-size: 2.5rem;
+  }
+}
 .collection__content img {
   border: 2px solid #dedede;
   width: 100%;
@@ -729,13 +698,11 @@ footer {
   left: 0;
   background: linear-gradient(to bottom, #fbbd61, #ec7532);
   opacity: 0.9;
-  /* chưa hover */
   transform: skewX(30deg) translateX(-130%);
   transition: 0.5s;
 }
 
 .team__img:hover .team__overlay {
-  /* đã hover */
   transform: skewX(30deg) translateX(-30%);
 }
 
@@ -746,9 +713,6 @@ footer {
   width: 100%;
   height: 100%;
   text-align: center;
-  /* canh giữa theo chiều dọc và chiều ngang 
-      khi chỉ có 1 thẻ con
-  => khai báo display flex ở thẻ cha */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,8 +786,6 @@ footer {
 /* STATS */
 .stats {
   background-image: url(../img/stats_bg.jpg);
-  /* gắn cứng hình lên trên trình duyệt,
-  nội dung được trượt trên hình, chứ hình k di chuyển */
   background-attachment: fixed;
 }
 
@@ -951,19 +913,15 @@ iframe {
 
 /* BACK TO TOP */
 .backToTop {
-  /* đi theo trang web (thẻ body) khi trượt lên trượt xuống */
   position: fixed;
   z-index: 100;
   right: 10px;
   bottom: 50px;
-  /* nút backToTop ẩn đi khi ở đầu màn hình*/
   visibility: hidden;
   opacity: 0;
 }
 
 /* back-to-top button visible */
-/* hiện lại nút mũi tên backToTop 
-    khi ta trượt màn hình xuống */
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
@@ -975,7 +933,6 @@ iframe {
   background-color: #ec7532;
   width: 40px;
   height: 40px;
-  /* kích thước cho icon mũi tên */
   font-size: 2rem;
   text-align: center;
   line-height: 36px;
@@ -987,20 +944,7 @@ iframe {
   content: "";
   width: 0;
   height: 3px;
-  /*
-  * Giá trị 1 - hướng trải màu
-      +) to right : trái qua phải
-      +) to left : phải qua trái
-      +) to bottom : từ trên xuống
-      +) to top : từ dưới lên
-
-  - Phụ thuộc vào hướng trải màu
-  * Giá trị 2 - màu bắt đầu 
-  * Giá trị 3 - màu kết thúc
-  */
   background: linear-gradient(to right, #fbbd61, #ec7532);
-  /* đổi tính chất thẻ after từ inline thành block 
-      để thẻ hiện lên giao diện */
   display: block;
   box-shadow: 0 0 20px 0 #fbbd61;
   transition: 0.5s;
@@ -1010,7 +954,6 @@ iframe {
   width: 100%;
 }
 
-/* đang ở trang nào sẽ có đường viền */
 .line.active::after {
   width: 100%;
 }
@@ -1048,7 +991,6 @@ iframe {
   background: linear-gradient(to right, #fbbd61, #ec7532);
   display: block;
   box-shadow: 0 0 20px 0 #fbbd61;
-  /* canh đường gạch vào giữa thẻ */
   margin: 20px auto;
 }
 
@@ -1173,13 +1115,11 @@ iframe {
   left: 0;
   background: linear-gradient(to bottom, #fbbd61, #ec7532);
   opacity: 0.9;
-  /* chưa hover */
   transform: skewX(30deg) translateX(-130%);
   transition: 0.5s;
 }
 
 .item__img:hover .item__overlay {
-  /* đã hover */
   transform: skewX(30deg) translateX(-30%);
 }
 
@@ -1190,9 +1130,6 @@ iframe {
   width: 100%;
   height: 100%;
   text-align: center;
-  /* canh giữa theo chiều dọc và chiều ngang 
-      khi chỉ có 1 thẻ con
-  => khai báo display flex ở thẻ cha */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2274,7 +2211,7 @@ iframe {
 .productDetail .product-name h1 {
   font-size: 30px;
   font-weight: bold;
-  productDetail: block;
+  display: block;
   margin-bottom: 10px;
   margin-top: 16px;
 }
@@ -2324,11 +2261,9 @@ iframe {
   border-radius: 4px;
   margin-right: 5px;
   cursor: pointer;
-  -webkit-appearance: none;
   box-sizing: border-box;
   text-align: center;
   border: 1px solid #dadada;
-  float: left;
   margin-left: 5px;
 }
 
@@ -2340,9 +2275,7 @@ iframe {
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
-  -webkit-appearance: none;
   border: 1px solid #dadada;
-  float: left;
   margin-left: 5px;
   display: inline-block;
 }
@@ -2886,4 +2819,49 @@ body.darkMode {
 
 .darkMode .payment .discount-code {
   color: #fc7121;
+}
+
+.darkMode .productDetail .product-color a {
+  text-decoration: none;
+  color: white;
+}
+
+.darkMode .productDetail .product-related-item h3 a {
+  height: 30px;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.darkMode .productDetail .size-type span {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  min-width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 12px 10px 12px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.darkMode .productDetail .product-name h1 {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 16px;
+  color: #fff;
+}
+
+.darkMode .productDetail .panel-title-item a {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
