@@ -1687,6 +1687,7 @@ iframe {
   width: 95%;
   margin: 0 auto;
   display: flex;
+  margin-top: 10px;
   justify-content: center;
 }
 
@@ -2176,6 +2177,10 @@ iframe {
 
 .productDetail .product-top ol {
   padding: 0;
+}
+
+.productDetail .product-top ol a {
+  color: #ec7532;
 }
 
 .productDetail .product-content-left-big-img {
