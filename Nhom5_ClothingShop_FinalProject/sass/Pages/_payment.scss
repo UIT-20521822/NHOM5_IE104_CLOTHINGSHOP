@@ -1,8 +1,8 @@
 .payment {
     width: 95%;
     margin: 0 auto;
-    display: flex;
     margin-top: 10px;
+    display: flex;
     justify-content: center;
 }
 
@@ -11,6 +11,7 @@
 }
 
 /* NAV */
+
 .payment-step {
     margin-left: 20px;
     white-space: nowrap;
@@ -21,12 +22,16 @@
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 18px;
-    color: black;
+    font-size: 16px;
 }
 
 .payment-step a {
+    color: #ec7532;
     text-decoration: none;
+}
+
+.payment-step p {
+    color: black;
 }
 
 .payment-step a:hover {
@@ -34,6 +39,7 @@
 }
 
 /* MAIN */
+
 .payment main {
     flex-grow: 1;
     flex-basis: 0;
@@ -42,10 +48,12 @@
 }
 
 .payment main h2 {
+    font-size: 20px;
     margin-left: 50px;
 }
 
 /* FORM */
+
 .payment .form-group {
     margin-bottom: 20px;
     margin-right: 20px;
@@ -53,7 +61,6 @@
 
 .payment label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -100,6 +107,7 @@
 }
 
 /* Phương thức vận chuyển */
+
 .shipping-options {
     display: grid;
     grid-template-columns: 1fr;
@@ -108,7 +116,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .shipping-options label {
@@ -118,7 +126,7 @@
 
 .shipping-options .shipping-cost {
     margin-left: auto;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .shipping-options .checkmark {
@@ -139,6 +147,7 @@
 }
 
 /* Phương thức thanh toán */
+
 .payment-options {
     display: grid;
     grid-template-columns: 1fr;
@@ -147,7 +156,7 @@
     padding: 10px;
     border-radius: 4px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .payment-options label {
@@ -167,6 +176,7 @@
 }
 
 /* Button */
+
 .payment .order-button {
     font-size: 20px;
     padding: 10px 20px;
@@ -186,6 +196,7 @@
 }
 
 /* SIDEBAR */
+
 .payment sidebar {
     flex-grow: 1;
     flex-basis: 0;
@@ -217,6 +228,7 @@
 }
 
 /* Danh sách sản phẩm */
+
 .payment .product-list {
     list-style: none;
     border-bottom: 1px solid #fbbd61;
@@ -279,6 +291,7 @@
 }
 
 /* Discount */
+
 .payment .discount-container {
     display: none;
     width: 200px;
@@ -398,6 +411,7 @@
 }
 
 /* Thành tiền */
+
 .payment .order-summary p,
 .payment .price-total p {
     display: flex;
@@ -426,7 +440,9 @@
 }
 
 /* RESPONSIVE */
+
 /* Medium devices (tablets, 768px to 991px) */
+
 @media (max-width: 991px) {
     .payment {
         font-size: 13px;
@@ -441,6 +457,7 @@
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
+
 @media (max-width: 767px) {
     .payment {
         display: flex;
@@ -448,12 +465,10 @@
         margin-left: -5px;
         justify-content: center;
     }
-
     .payment main {
         order: 1;
         margin-right: -40px;
     }
-
     .payment sidebar {
         order: 2;
         margin-top: 20px;
@@ -463,6 +478,7 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575px) {
     .payment {
         display: flex;
@@ -470,12 +486,10 @@
         margin-left: -5px;
         justify-content: center;
     }
-
     .payment main {
         order: 1;
         margin-right: -40px;
     }
-
     .payment sidebar {
         order: 2;
         margin-top: 20px;
